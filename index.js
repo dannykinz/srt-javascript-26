@@ -149,3 +149,30 @@ const userName = 'Danny';
 
 console.log(userName[2]);
 console.log(userName.charAt(4));
+
+// Create a variable that has a a phrase of your best food and after a while, replace the best food with a new found food.... create another variable that receives user portfolio and cv file then confirms if they are typing the right url and uploading the right pdf cv file and create a variable of username and then pick the first letter of the username as you show it on the console.
+
+// Replace user best food with a new one
+
+const bestFood = 'Garri';
+
+console.log(bestFood);
+
+const newBestFood = bestFood.replace('Garri', 'Garri, Salt and Banana');
+
+console.log(newBestFood);
+
+// Confirms if a user data is true
+
+const userPortfolio = 'https://dannykinz.com';
+const userResume = 'resume26.pdf';
+
+console.log(userPortfolio.startsWith('https'));
+console.log(userResume.endsWith('pdf'));
+
+// Pick a user first name letter for DP
+
+const platformUser = 'Danny';
+
+console.log(platformUser[0]);
+console.log(platformUser.charAt(0));
