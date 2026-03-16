@@ -176,3 +176,50 @@ const platformUser = 'Danny';
 
 console.log(platformUser[0]);
 console.log(platformUser.charAt(0));
+
+// Numbers in Javascript
+
+const userAge = 19;
+
+const itemPrice = 4.99;
+
+console.log(userAge);
+console.log(itemPrice);
+
+// Connverting number data type to string
+
+console.log(typeof userAge.toString());
+
+console.log(userAge + 10);
+
+// Fixed number to a certain value
+
+const tinubuCoin = 0.9900009967789999999999;
+
+console.log(tinubuCoin.toFixed(2));
+
+// Converting string of number to number
+
+const ajoAmount = '1000';
+const previousBal = 9000;
+
+console.log(parseInt(ajoAmount) + previousBal);
+
+const priceOfFuelInBuhariTime = '174.99';
+const productionPrice = 20;
+
+console.log(parseFloat(priceOfFuelInBuhariTime) + productionPrice);
+
+const newTibunuPriceOfFuel = '25';
+
+console.log(newTibunuPriceOfFuel + productionPrice);
+
+// Create a number of age, prices, and currency of multiple value, convert the number to string and an addition calculation to get the weird wrong calculation, round the currency to a number of 6, and convert the string number of prices to number then calulate to get the actual real addition value.
+
+const realAge = 99;
+const prices = '10.99';
+const newNaira = 15.890001223344;
+
+console.log(realAge.toString() + 1);
+console.log(newNaira.toFixed(6));
+console.log(parseFloat(prices) + 10);
