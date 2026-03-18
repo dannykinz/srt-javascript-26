@@ -223,3 +223,76 @@ const newNaira = 15.890001223344;
 console.log(realAge.toString() + 1);
 console.log(newNaira.toFixed(6));
 console.log(parseFloat(prices) + 10);
+
+// Math Operations
+
+// Random number in JS
+
+const randomNum = Math.random();
+
+console.log(randomNum);
+
+// Round down a number
+
+const downNum = Math.floor(4.99);
+
+console.log(downNum);
+
+// Round up a number
+
+const upNum = Math.ceil(2.1);
+
+console.log(upNum);
+
+// Round a number to the nearest
+
+const autoNum = Math.round(1.5);
+
+console.log(autoNum);
+
+// Getting the highest number/value
+
+const maxNum1 = Math.max(35, 10, 3, 8);
+const maxNum2 = Math.max(-55, -1, -110);
+
+console.log(maxNum1);
+console.log(maxNum2);
+
+// Get a random number between one to 6....
+
+const diceNum = Math.floor(Math.random() * 6 + 1);
+
+console.log(diceNum);
+
+// Boolean data types
+const isLoggedIn = false;
+const hasMoney = true;
+const hasPassword = true;
+const hasEmail = true;
+const acctBal = undefined;
+
+if (acctBal) {
+    console.log(`Yes, you can login`);
+} else {
+    console.log(`Please put in your email and password`);
+}
+
+let userBestFood = null;
+
+const collectBestFood = 'Beans';
+
+userBestFood = collectBestFood;
+
+console.log(userBestFood);
+
+// Arrays
+
+const foods = ['Rice', 'Beans', 'Garri', 'Yam', 'Soup'];
+const ages = [40, 30, 11, 50, 22];
+
+console.log(foods);
+console.log(ages);
+// Accessing item in an array using the square bracket notation
+
+console.log(foods[4]);
+console.log(ages[0]);
