@@ -292,7 +292,37 @@ const ages = [40, 30, 11, 50, 22];
 
 console.log(foods);
 console.log(ages);
+
 // Accessing item in an array using the square bracket notation
 
 console.log(foods[4]);
 console.log(ages[0]);
+
+const fishes = ['Tilapia', 'Dry fish', 'River fish', 'Sabida Fish', 'Sandine Fish', 'Skubian Fish'];
+
+console.log(fishes);
+
+const grains = ['Rice', 'Garri', 'Oats', 'Poundo', 'Beans'];
+
+console.log(grains);
+
+// Desctrucring
+
+const [fish1, fish2] = fishes;
+
+console.log(fish2);
+console.log(fish1);
+
+// Spread operator
+
+// Copy array
+
+const bestFishes = [...fishes];
+
+console.log(bestFishes);
+
+// Combine an array
+
+const localFoods = [...fishes, ...grains];
+
+console.log(localFoods);
