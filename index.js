@@ -326,3 +326,57 @@ console.log(bestFishes);
 const localFoods = [...fishes, ...grains];
 
 console.log(localFoods);
+
+// Array Methods
+
+// Map method
+
+fishes.map(fish => console.log(fish));
+
+// Filter method
+
+const finalFish = fishes.filter(fish => fish.includes('T'));
+
+console.log(finalFish);
+
+// Find method
+
+const findDry = fishes.find(fish => fish === 'Tilapia');
+
+console.log(findDry);
+
+const dayTime = ['Morning', 'Afternoon', 'Evening'];
+
+const notifyMealTime = dayTime.find(period => period === 'Afternoon');
+
+console.log(`It's ${notifyMealTime}, time for lunch!`);
+
+// Create an array of single products for shoes, clothes and then group them into a single varaible of products using the spread.... and also destructure them in a seperate variable, it doesn;t have to be all. Also using the map method to shoe all items in the products as a list in the console.
+
+// Includes method in an array
+
+const naijaFoods = [
+    'Banga soup',
+    'Rice and beans',
+    'Owo and yam',
+    'Afang soup',
+    'Ewedu and Amala',
+    'Ofaku soup',
+];
+
+console.log(naijaFoods.includes('Ogbono Soup'));
+console.log(naijaFoods.includes('Banga soup'));
+
+// Add to the end of an array
+naijaFoods.push('Vegetable soup and pounded yam');
+
+// Sorting items alphabetically in an array
+naijaFoods.sort();
+
+// ForEach array loop method
+
+naijaFoods.forEach(food => {
+    console.log(`We currently have ${food}`);
+});
+
+// Create an array of students with different names, check if one of them is in attendance to get the return of true or false and also use a sentence of all the student is in attendance with their respective names in front of them without repeating yourself multiple times..... and also sort each item to show aphabetically while also adding a new user that is not on the list initially.
