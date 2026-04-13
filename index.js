@@ -380,3 +380,280 @@ naijaFoods.forEach(food => {
 });
 
 // Create an array of students with different names, check if one of them is in attendance to get the return of true or false and also use a sentence of all the student is in attendance with their respective names in front of them without repeating yourself multiple times..... and also sort each item to show aphabetically while also adding a new user that is not on the list initially.
+
+// Storing one user info
+
+const customer1Name = 'John Doe';
+const customer1Age = 30;
+const customer1Status = 'Single';
+const customer1HasMoney = true;
+const customer1HasKids = false;
+const customer1Education = 'BSC';
+
+// Store data using Object data type
+
+const customer1 = {
+    name: 'John Doe',
+    age: 30,
+    status: 'Single',
+    hasMoney: true,
+    hasKids: false,
+    education: 'MSC',
+    hobbies: ['Singing', 'Cooking', 'Coding', 'Raping'],
+};
+
+console.log(customer1);
+
+// Acccesing individual data in an object....
+
+console.log(`Welcome Back, ${customer1.name}`);
+console.log(`It appears you are still ${customer1.status}`);
+console.log(`This customer has ${customer1['education']} degree`);
+
+// Create an object of user that stores the user name, age, email, best foods, married, has family or even if the person is healthy then use a sentence with any of the data by accessing them individually.
+
+const user = {
+    name: 'Rebecca',
+    age: 1024,
+    email: 'rebecca@gmail.com',
+    married: false,
+    hasFamily: 'Mikaelson',
+    healthy: false,
+    bestFoods: ['Blood', 'Human Flesh', 'Human Heart'],
+};
+
+// Updating object data
+user.name = 'Klaus';
+user.age = 1102;
+user.healthy = true;
+
+// Add new data to the object
+user.money = 10000;
+
+console.log(
+    `${user.name} is a ${user['age']} years old vampires, from the ${user.hasFamily} family, and ${user.married}, she is not married, and one out of her best food is ${user.bestFoods[0]}.... oops and he has ${user.money}`
+);
+
+// Desctucring object properties
+
+const carModel = {
+    carName: 'Ford',
+    year: 2018,
+    type: 'Vesper L1',
+    speed: 220,
+    velocity: 90,
+    useElectricity: false,
+};
+
+// get the name
+
+console.log(carModel.carName);
+console.log(carModel.year);
+
+// Desctucture to a variable
+
+const { carName, year, speed, velocity } = carModel;
+
+console.log(carName);
+console.log(year);
+console.log(speed);
+console.log(velocity);
+
+// Spread operator
+
+const schoolInfo = { name: 'Uniben', founded: 1901, totalStudents: 88000 };
+const studentInfo = { studentName: 'James Doe', email: 'jamesdoeben@gmail.com' };
+
+// Merge both data
+const studentDetails = { ...schoolInfo, ...studentInfo };
+
+console.log(studentDetails);
+
+// Copying
+const newInfo = { ...studentInfo };
+
+console.log(newInfo);
+
+// Copying and adding new data
+const studentID = { ...studentInfo, age: 26 };
+
+console.log(studentID);
+
+// Copying and updating data
+
+const newStudent = { ...studentInfo, studentName: 'Rebeccah Jones' };
+
+console.log(newStudent);
+
+// Objects keys method
+
+console.log(Object.keys(studentDetails));
+
+// Create an update of product details for a shoe brand that contains name, year, type, size, price and color pairs, but the catch is to only create 3 value initially, copy to a new final variable and update the rest, add and change name and also, desctruring few of the data to a varible and then check in console.
+
+const products = {
+    nameS: 'Nike',
+    yearS: 2025,
+    type: 'Casual Sneakers',
+};
+
+const fullDetails = {
+    ...products,
+    size: [38, 40, 42, 44, 46, 50],
+    priceN: 50000,
+    colors: ['blue', 'white', 'Black'],
+};
+
+const { nameS, yearS, type, colors, size, priceN } = fullDetails;
+
+console.log(
+    `I want ${nameS} ${type} size ${size[2]} and color ${colors[1]} for the price of $${priceN}`
+);
+
+// Operators
+
+// Arithmetics
+
+const num1 = 40;
+let num2 = 30;
+
+num2 /= 10;
+
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
+console.log(num1 % num2);
+
+// Adding item to cart
+
+let shoppingItems = [];
+
+shoppingItems += 'Shoe ';
+
+shoppingItems += 'Bag ';
+
+shoppingItems += 'Towel';
+
+console.log(shoppingItems);
+
+// Create a bank balance, add new money to the total balance, also add new money whenever you sell a product to the main balance, also remove and keep the balance intact after spending and show the final solution on the console.
+
+let bankBal = 40000;
+
+// Borrow
+
+let loanBal = (bankBal += 360000);
+
+// Buying of products
+
+let itemBought = (bankBal -= 120000);
+
+// Sells price
+
+let salesPrice = (bankBal += 38000);
+let newProductSales = (bankBal += 38000);
+
+console.log(bankBal);
+
+// Comparison operator
+
+const price1 = 10;
+const price2 = 120;
+
+// if they are the same thing
+
+console.log(price1 === price2);
+
+// Not equal operator
+
+console.log(price1 !== price2);
+
+// Greater than and greater equal
+
+console.log(price1 > price2);
+console.log(price1 >= price2);
+
+// Less than and less equal
+console.log(price1 < price2);
+console.log(price1 <= price2);
+
+// Control Flow
+
+// if/else statement
+
+if (0) {
+    console.log('First control flow resulted to True');
+} else {
+    console.log('Nay! The first control flow resulted to False.');
+}
+
+// Allowing access if conditions are met.
+
+const ageOfUser = 18;
+const hasFunds = false;
+
+if (ageOfUser >= 18 && hasFunds) {
+    console.log('Congrats!!! You can enter the club');
+} else {
+    console.log('Sorry, you are a minor and you are not welcomed in the club');
+}
+
+// Student graded score
+
+const schoolCutOffMark = 60;
+const schoolRejectionMark = 32;
+const studentFinalMark = 50;
+
+if (studentFinalMark >= schoolCutOffMark) {
+    console.log(`Congrats, you passed and your final score is ${studentFinalMark}`);
+} else if (studentFinalMark > schoolRejectionMark) {
+    console.log(
+        `You tried!!! We have reconsidered your score, and you have ${studentFinalMark} in total`
+    );
+} else {
+    console.log('You failed! Please do better next time.');
+}
+
+// Create a control flow that checks if it's true that the restaurant has banga soup and tell the user they have it in their menu, if they don't have that check if Ogbono soup is available and show the true condition, if not as well check if there's Egusi, if all of them is not true then tell the restaurant to close their shop.
+
+const userRequest = 'Ogbono';
+
+if (userRequest === 'Banga') {
+    console.log(`Yes we currently have ${userRequest}`);
+} else if (userRequest === 'Ogbono') {
+    console.log(`Yes we currently have ${userRequest}`);
+} else if (userRequest === 'Egusi') {
+    console.log(`Yes we currently have ${userRequest}`);
+} else {
+    console.log('You guys have nothing, close your restaurant!');
+}
+
+// Create a simple bank logic that checks if the user has enough money to buy an item, if it's true show proceed and pay, check if the user bal actual worth the actual item price also and shown that yes their money can cover the item otherwise show the last result.
+
+const userBankBal = 4000;
+const itemSinglePrice = 5000;
+
+if (userBankBal > itemSinglePrice) {
+    console.log('Yes proceed and make payment');
+} else if (userBankBal === itemSinglePrice) {
+    console.log('Yes, your actual balance covers the item price');
+} else {
+    console.log('Sorry, you have insufficient funds...Oops!!!');
+}
+
+// Ternary Operator
+
+const appUsername = 'James';
+
+const welcomeUser = appUsername ? `Welcome Back, ${appUsername}` : `Please Login, Guest`;
+
+console.log(welcomeUser);
+
+// Create a ternary operator that checks if a user age is greater than 18 years old and show a response if the user can vote or can not to remove Tibunu as president of Nigeria.
+
+const naijaUserAge = 18;
+
+const canVote = naijaUserAge >= 18 ? 'Yes, Can Vote' : 'You are not of age to Vote';
+
+console.log(canVote);
