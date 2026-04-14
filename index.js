@@ -657,3 +657,78 @@ const naijaUserAge = 18;
 const canVote = naijaUserAge >= 18 ? 'Yes, Can Vote' : 'You are not of age to Vote';
 
 console.log(canVote);
+
+// Loops
+
+// for loop
+
+const localFoodLists = ['Banga', 'Egusi', 'Ogbono', 'Afang', 'Ofaku', 'Vegetable', 'Okro'];
+
+for (let i = 0; i < localFoodLists.length; i++) {
+    console.log(localFoodLists[i]);
+}
+
+// Create a for loop that loops through a number from 1 to 10 and show the number in the console.
+
+for (let i = 1; i < 11; i++) {
+    console.log(i);
+}
+
+// Create a for loop that loops through your name and show the name letters in the console.
+
+let userMainName = 'James';
+
+for (let i = 0; i < userMainName.length; i++) {
+    console.log(userMainName[i]);
+}
+
+// Loop through and array with for of
+
+const webStudents = ['Enoch', 'Alex', 'Biggie', 'Mary', 'James', 'Arthur'];
+
+for (let student of webStudents) {
+    console.log(student);
+}
+
+// Loop through an object using for in
+
+const modelDetails = {
+    up: 'Head',
+    middle: 'Body',
+    down: 'Legs',
+    hands: 'Palm',
+};
+
+for (let item in modelDetails) {
+    console.log(modelDetails[item]);
+}
+
+// Create an array of your hobbies and loop through them all at once in the console.
+
+console.log('MY HOBBIES');
+
+const hobbies = ['Cooking', 'Singing', 'Writing', 'Coding'];
+
+for (let hoobie in hobbies) {
+    console.log(hobbies[hoobie]);
+}
+
+// you use for...of to loop through an array
+
+// Create an object of your informations from name to status and then loop through them and show only the values in the console.
+
+console.log('USER INFORMATIONS');
+
+const userInfo = {
+    name: 'Danny',
+    status: 'Single',
+    age: 44,
+    skill: 'Programming',
+    job: 'Designer and Developer',
+};
+
+for (let item in userInfo) {
+    console.log(item.toUpperCase() + ': ' + userInfo[item]);
+}
+
+// you use for...in to loop through an object
