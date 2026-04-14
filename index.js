@@ -732,3 +732,71 @@ for (let item in userInfo) {
 }
 
 // you use for...in to loop through an object
+
+// Functions in Javascript
+
+function greet() {
+    console.log('Hello');
+}
+
+greet();
+
+// Simple function that adds money to your account balance.
+
+function addBal(add) {
+    let userBal = 4000;
+
+    console.log(userBal + add);
+}
+
+addBal(12000);
+
+addBal(3000);
+
+// Create a function that greets user by their name
+
+function welcomeUsers(username) {
+    console.log(`Welcome Back, ${username}`);
+}
+
+welcomeUsers('Nkechi');
+
+welcomeUsers('Biggie');
+
+welcomeUsers('James');
+
+// Create an arrow function that welcomes users
+
+const greetUser = (username, age) => {
+    console.log(`Hello, ${username}, you are ${age} years old today`);
+};
+
+greetUser('Biggie', 12);
+
+// create a simple function that multiply the total items a user buys by the default item price.
+
+const calcPrice = item => {
+    let itemPrice = 10.99;
+
+    return item * itemPrice;
+};
+
+console.log(calcPrice(44));
+
+// a function that returns a loop item of array
+
+const listItem = document.querySelector('#fruitLists');
+
+const bestFruits = ['Apple', 'Banana', 'Avocado', 'PawPaw', 'Mango', 'Strawberry', 'Tangarine'];
+
+const showItems = data => {
+    for (let item of data) {
+        listItem.innerHTML += `<li>${item}</li>`;
+    }
+
+    return;
+};
+
+showItems(bestFruits);
+
+// Create a function that accepts student final score as a parameter and then return the response if the student pass by comparing with the school cut off mark, otherwise show failed... then run the fuction to show the answers in the console. Use arrow or the normal function
