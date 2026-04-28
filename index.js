@@ -800,3 +800,155 @@ const showItems = data => {
 showItems(bestFruits);
 
 // Create a function that accepts student final score as a parameter and then return the response if the student pass by comparing with the school cut off mark, otherwise show failed... then run the fuction to show the answers in the console. Use arrow or the normal function
+
+const schoolScoreMark = 70;
+
+function schoolResult(studentScore) {
+    if (studentScore >= schoolScoreMark) {
+        console.log('You Pass');
+    } else {
+        console.log('You fail');
+    }
+
+    return;
+}
+
+schoolResult(65);
+
+// Dom Manipulation
+
+// Selecting elements
+
+// By tag
+const heading = document.querySelector('h2');
+
+heading.textContent = 'Dom Manipulation in Action';
+
+// By class
+const textarea = document.querySelector('.text-area');
+
+console.log(textarea);
+
+// By Id
+const box = document.querySelector('#boxx');
+
+console.log(box);
+
+// Create html elements with tag, class and ID, then pick all of them with javascript and show them in the console.
+
+const textBox = document.getElementById('boxx');
+
+console.log(textBox);
+
+// Changing an html text content
+
+const welcomeText = document.querySelector('h3');
+
+welcomeText.textContent = 'Welcome, Biggie';
+
+// Lets make it dynamic
+
+const usersName = 'Rukky';
+
+welcomeText.textContent = `Welcome, ${usersName}`;
+
+// Create an html paragraph that shows Javascript is hard by default and then change with Javascript to Javascript is easy
+
+const para = document.querySelector('.para');
+
+para.textContent = 'Javascript is easy';
+
+// add html element to a div container with the empty class.
+
+const emptyDiv = document.querySelector('.empty');
+
+emptyDiv.innerHTML = '<h2>New Element Added</h2>';
+
+// add a para... of lorem 10 to it
+
+emptyDiv.innerHTML +=
+    '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>';
+
+// add a button with the text get started
+
+emptyDiv.innerHTML += '<button>Get Started</button>';
+
+// Style the div with bg color, radius, border and padding
+emptyDiv.style.backgroundColor = 'lightblue';
+emptyDiv.style.borderRadius = '10px';
+emptyDiv.style.border = '2px solid black';
+emptyDiv.style.padding = '20px';
+emptyDiv.style.marginTop = '90px';
+
+// ClassList method with javascript
+emptyDiv.classList.remove('empty');
+emptyDiv.classList.add('new-div');
+
+// Class Challenge: Create a div container with the class name of empty, then with javascript, add a new html element to it, also add a paragraph of lorem ipsum text to it, then add a button with the text get started, style the div container with background color, border radius, border and padding. Lastly use classList method to remove the empty class and add a new class name of new-div.
+
+// Event Listeners
+
+const btn = document.getElementById('btn');
+const para1 = document.querySelector('.para1');
+
+btn.addEventListener('click', () => {
+    para1.classList.toggle('paraview');
+});
+
+// Counter logic
+
+let count = 0;
+
+const counterValue = document.querySelector('.counterValue');
+const decreaseBtn = document.getElementById('decrease');
+const resetBtn = document.getElementById('reset');
+const increaseBtn = document.getElementById('increase');
+
+decreaseBtn.addEventListener('click', () => {
+    count--;
+    counterValue.textContent = count;
+});
+
+resetBtn.addEventListener('click', () => {
+    count = 0;
+    counterValue.textContent = count;
+});
+
+increaseBtn.addEventListener('click', () => {
+    count++;
+    counterValue.textContent = count;
+});
+
+// Create element of div with h3 and paragraph of lorem 20
+
+const newDiv = document.createElement('div');
+
+newDiv.innerHTML = '<h3>New Div Element</h3>';
+newDiv.innerHTML +=
+    '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>';
+
+// inject in the body
+document.body.appendChild(newDiv);
+
+// Form Validation in JS with the error p
+const form = document.querySelector('#form');
+const usernameN = document.getElementById('username');
+const emailN = document.getElementById('email');
+const passwordN = document.getElementById('password');
+const errorP = document.querySelector('.error');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    if (username.value === '' || emailN.value === '' || passwordN.value === '') {
+        errorP.textContent = 'Please fill in all fields';
+        errorP.style.color = 'red';
+    } else {
+        errorP.textContent = 'Form submitted successfully';
+        errorP.style.color = 'green';
+    }
+});
+
+// Create a form that receives email, name, subject, and message, then validate the authencicity of the data filled in before submit.
+
+// Understand what it means to pick an html element with JavaScript and then create a new form validation granting user access if the data is correct and show an error message if the data is not correct on submit trigger action.
